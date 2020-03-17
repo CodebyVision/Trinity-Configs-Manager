@@ -100,6 +100,9 @@ namespace LFAR
                 }
             }
             catch (Exception exception) {  MessageBox.Show(exception.Message); }
+
+            // focus on last row
+            dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.RowCount - 1].Cells[0];
         }
 
         private void deleteCollectionButton_Click(object sender, EventArgs e)
@@ -165,6 +168,8 @@ namespace LFAR
         private void button7_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows.Add(false, "......", "......", "......");
+
+            // focus on last row
             dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.RowCount - 1].Cells[0];
         }
 

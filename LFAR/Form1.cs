@@ -102,7 +102,9 @@ namespace LFAR
             catch (Exception exception) {  MessageBox.Show(exception.Message); }
 
             // focus on last row
-            dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.RowCount - 1].Cells[0];
+            try { dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.RowCount - 1].Cells[0]; } catch { }
+
+            label1.Text = "Total: " + dataGridView1.RowCount.ToString() + " lines";
         }
 
         private void deleteCollectionButton_Click(object sender, EventArgs e)
@@ -170,7 +172,7 @@ namespace LFAR
             dataGridView1.Rows.Add(false, "......", "......", "......");
 
             // focus on last row
-            dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.RowCount - 1].Cells[0];
+            try { dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.RowCount - 1].Cells[0]; } catch { }
         }
 
         private void buttonSelectPathOfFile(object sender, EventArgs e)
@@ -192,8 +194,6 @@ namespace LFAR
                 DialogResult result = MessageBox.Show("This action will replace all lines with the values specified.", "Confirmation", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    label1.Text = "Attempting new jobs..";
-
                     foreach (DataGridViewRow row in dataGridView1.Rows)
                     {
                         // find and replace line from datagridview

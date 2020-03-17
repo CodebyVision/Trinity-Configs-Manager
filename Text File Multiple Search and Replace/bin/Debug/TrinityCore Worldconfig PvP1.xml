@@ -1,0 +1,20 @@
+﻿<Data>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>Custom.VipBonus[1].Honor = 5</Line_to_Search>
+    <Replace_with>Custom.VipBonus[1].Honor = 444</Replace_with>
+    <Comment />
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>Custom.VipBonus[9].Arena = 45</Line_to_Search>
+    <Replace_with>Custom.VipBonus[9].Arena = 999</Replace_with>
+    <Comment />
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>AllFlightPaths = 0</Line_to_Search>
+    <Replace_with>AllFlightPaths = 1</Replace_with>
+    <Comment>......</Comment>
+  </LineJobs>
+</Data>

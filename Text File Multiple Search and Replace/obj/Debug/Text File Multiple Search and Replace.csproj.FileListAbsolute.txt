@@ -1,0 +1,8 @@
+C:\Users\artis\source\repos\Text File Multiple Search and Replace\Text File Multiple Search and Replace\bin\Debug\Text File Multiple Search and Replace.exe
+C:\Users\artis\source\repos\Text File Multiple Search and Replace\Text File Multiple Search and Replace\bin\Debug\Text File Multiple Search and Replace.pdb
+C:\Users\artis\source\repos\Text File Multiple Search and Replace\Text File Multiple Search and Replace\obj\Debug\Text File Multiple Search and Replace.csprojAssemblyReference.cache
+C:\Users\artis\source\repos\Text File Multiple Search and Replace\Text File Multiple Search and Replace\obj\Debug\Text_File_Multiple_Search_and_Replace.Form1.resources
+C:\Users\artis\source\repos\Text File Multiple Search and Replace\Text File Multiple Search and Replace\obj\Debug\Text_File_Multiple_Search_and_Replace.Properties.Resources.resources
+C:\Users\artis\source\repos\Text File Multiple Search and Replace\Text File Multiple Search and Replace\obj\Debug\Text File Multiple Search and Replace.csproj.GenerateResource.cache
+C:\Users\artis\source\repos\Text File Multiple Search and Replace\Text File Multiple Search and Replace\obj\Debug\Text File Multiple Search and Replace.exe
+C:\Users\artis\source\repos\Text File Multiple Search and Replace\Text File Multiple Search and Replace\obj\Debug\Text File Multiple Search and Replace.pdb

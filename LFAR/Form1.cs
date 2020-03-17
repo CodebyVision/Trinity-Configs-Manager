@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Text_File_Multiple_Search_and_Replace
+namespace LFAR
 {
     public partial class Form1 : Form
     {
@@ -139,6 +139,7 @@ namespace Text_File_Multiple_Search_and_Replace
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 row.Cells[0].Value = true;
+                row.Cells[0].Selected = true;
             }
         }
         private void buttonUncheckAll_Click(object sender, EventArgs e)
@@ -146,6 +147,7 @@ namespace Text_File_Multiple_Search_and_Replace
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 row.Cells[0].Value = false;
+                row.Cells[0].Selected = false;
             }
         }
 
@@ -207,7 +209,8 @@ namespace Text_File_Multiple_Search_and_Replace
 
                             } while (sr.EndOfStream == false);
                         }
-                        File.WriteAllText(pathOfFile, text);
+                        if (replacesCount > 0)
+                            File.WriteAllText(pathOfFile, text);
                     }
                     label1.Text = "Jobs finished: "+ replacesCount + " replaces.";
                 }

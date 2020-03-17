@@ -1,0 +1,15 @@
+D:\LinesFindAndReplace\Text File Multiple Search and Replace\bin\Debug\LFAR.exe
+D:\LinesFindAndReplace\Text File Multiple Search and Replace\bin\Debug\LFAR.pdb
+D:\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\LFAR.csprojAssemblyReference.cache
+D:\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\LFAR.Form1.resources
+D:\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\LFAR.Properties.Resources.resources
+D:\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\LFAR.csproj.GenerateResource.cache
+D:\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\LFAR.exe
+D:\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\LFAR.pdb
+D:\LinesFindAndReplace\LFAR\bin\Debug\LFAR.exe
+D:\LinesFindAndReplace\LFAR\bin\Debug\LFAR.pdb
+D:\LinesFindAndReplace\LFAR\obj\Debug\LFAR.Form1.resources
+D:\LinesFindAndReplace\LFAR\obj\Debug\LFAR.Properties.Resources.resources
+D:\LinesFindAndReplace\LFAR\obj\Debug\LFAR.csproj.GenerateResource.cache
+D:\LinesFindAndReplace\LFAR\obj\Debug\LFAR.exe
+D:\LinesFindAndReplace\LFAR\obj\Debug\LFAR.pdb

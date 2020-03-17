@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Text_File_Multiple_Search_and_Replace
+namespace LFAR
 {
     static class Program
     {

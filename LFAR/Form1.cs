@@ -206,10 +206,11 @@ namespace LFAR
                                 i++;
                                 string line = sr.ReadLine();
 
-                                if (line.Contains(row.Cells[1].Value.ToString()))
+                                if (line == row.Cells[1].Value.ToString())
                                     replacesCount++;
 
-                                line = row.Cells[2].Value.ToString();
+                                if (line == row.Cells[1].Value.ToString())
+                                    line = line.Replace(line, row.Cells[2].Value.ToString());
 
                                 text = text + line + Environment.NewLine;
 

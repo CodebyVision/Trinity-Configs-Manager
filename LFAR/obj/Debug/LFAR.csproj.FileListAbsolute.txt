@@ -21,3 +21,4 @@ C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.Properties.Reso
 C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.csproj.GenerateResource.cache
 C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.exe
 C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.pdb
+C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\bin\Debug\LFAR.exe.config

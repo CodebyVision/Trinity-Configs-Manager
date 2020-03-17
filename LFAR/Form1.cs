@@ -7,6 +7,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
@@ -185,7 +187,16 @@ namespace LFAR
             }
         }
 
-        private void buttonDoReplaceJob_Click(object sender, EventArgs e)
+        private async void buttonDoReplaceJob_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Running task, please wait...";
+
+            int replacesCount = await Task.Run(() => DoReplaceJob(3000));
+
+            label1.Text = "Jobs finished: " + replacesCount + " replaces.";
+        }
+
+        private int DoReplaceJob(int sleepTime)
         {
             int replacesCount = 0;
 
@@ -219,11 +230,14 @@ namespace LFAR
                         if (replacesCount > 0)
                             File.WriteAllText(pathOfFile, text);
                     }
-                    label1.Text = "Jobs finished: "+ replacesCount + " replaces.";
                 }
             }
             else
                 MessageBox.Show("Please select a valid file!");
+
+            Thread.Sleep(sleepTime);
+
+            return replacesCount;
         }
     }
 }

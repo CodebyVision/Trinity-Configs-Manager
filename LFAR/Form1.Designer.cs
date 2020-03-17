@@ -276,7 +276,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(308, 27);
             this.label1.TabIndex = 10;
-            this.label1.Text = "stand by";
+            this.label1.Text = "...";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2

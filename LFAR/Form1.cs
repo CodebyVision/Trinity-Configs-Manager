@@ -165,6 +165,7 @@ namespace LFAR
         private void button7_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows.Add(false, "......", "......", "......");
+            dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.RowCount - 1].Cells[0];
         }
 
         private void buttonSelectPathOfFile(object sender, EventArgs e)
@@ -203,7 +204,7 @@ namespace LFAR
                                 if (line.Contains(row.Cells[1].Value.ToString()))
                                     replacesCount++;
 
-                                line = line.Replace(row.Cells[1].Value.ToString(), row.Cells[2].Value.ToString());
+                                line = row.Cells[2].Value.ToString();
 
                                 text = text + line + Environment.NewLine;
 

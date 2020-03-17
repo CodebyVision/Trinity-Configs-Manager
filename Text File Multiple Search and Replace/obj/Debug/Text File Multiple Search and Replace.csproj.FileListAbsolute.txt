@@ -14,3 +14,11 @@ D:\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\Text_File
 D:\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\Text File Multiple Search and Replace.csproj.GenerateResource.cache
 D:\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\Text File Multiple Search and Replace.exe
 D:\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\Text File Multiple Search and Replace.pdb
+D:\Emu\ElunaTrinityWotlk_Deploy\LinesFindAndReplace\Text File Multiple Search and Replace\bin\Debug\Text File Multiple Search and Replace.exe
+D:\Emu\ElunaTrinityWotlk_Deploy\LinesFindAndReplace\Text File Multiple Search and Replace\bin\Debug\Text File Multiple Search and Replace.pdb
+D:\Emu\ElunaTrinityWotlk_Deploy\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\Text File Multiple Search and Replace.csprojAssemblyReference.cache
+D:\Emu\ElunaTrinityWotlk_Deploy\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\Text_File_Multiple_Search_and_Replace.Form1.resources
+D:\Emu\ElunaTrinityWotlk_Deploy\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\Text_File_Multiple_Search_and_Replace.Properties.Resources.resources
+D:\Emu\ElunaTrinityWotlk_Deploy\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\Text File Multiple Search and Replace.csproj.GenerateResource.cache
+D:\Emu\ElunaTrinityWotlk_Deploy\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\Text File Multiple Search and Replace.exe
+D:\Emu\ElunaTrinityWotlk_Deploy\LinesFindAndReplace\Text File Multiple Search and Replace\obj\Debug\Text File Multiple Search and Replace.pdb

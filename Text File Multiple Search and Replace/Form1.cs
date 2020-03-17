@@ -171,6 +171,7 @@ namespace Text_File_Multiple_Search_and_Replace
             {
                 pathOfFile = openFileDialog1.InitialDirectory + openFileDialog1.FileName;
                 textBox1.Text = pathOfFile;
+                label1.Text = "Changed file path";
             }
         }
 
@@ -183,6 +184,8 @@ namespace Text_File_Multiple_Search_and_Replace
                 DialogResult result = MessageBox.Show("This action will replace all lines with the values specified.", "Confirmation", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
+                    label1.Text = "Attempting new jobs..";
+
                     foreach (DataGridViewRow row in dataGridView1.Rows)
                     {
                         // find and replace line from datagridview
@@ -206,7 +209,7 @@ namespace Text_File_Multiple_Search_and_Replace
                         }
                         File.WriteAllText(pathOfFile, text);
                     }
-                    MessageBox.Show("All job done with " + replacesCount + " replaces!");
+                    label1.Text = "Jobs finished: "+ replacesCount + " replaces.";
                 }
             }
             else

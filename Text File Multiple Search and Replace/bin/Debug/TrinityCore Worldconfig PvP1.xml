@@ -1,20 +1,152 @@
 ﻿<Data>
   <LineJobs>
     <Check>False</Check>
-    <Line_to_Search>Custom.VipBonus[1].Honor = 5</Line_to_Search>
-    <Replace_with>Custom.VipBonus[1].Honor = 444</Replace_with>
-    <Comment />
-  </LineJobs>
-  <LineJobs>
-    <Check>False</Check>
-    <Line_to_Search>Custom.VipBonus[9].Arena = 45</Line_to_Search>
-    <Replace_with>Custom.VipBonus[9].Arena = 999</Replace_with>
-    <Comment />
-  </LineJobs>
-  <LineJobs>
-    <Check>False</Check>
     <Line_to_Search>AllFlightPaths = 0</Line_to_Search>
     <Replace_with>AllFlightPaths = 1</Replace_with>
+    <Comment>All flight paths available</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>GameType = 0</Line_to_Search>
+    <Replace_with>GameType = 1</Replace_with>
+    <Comment>PVP</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>StrictPlayerNames = 0</Line_to_Search>
+    <Replace_with>StrictPlayerNames = 1</Replace_with>
+    <Comment>Only latin characters</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>StrictCharterNames = 0</Line_to_Search>
+    <Replace_with>StrictCharterNames = 1</Replace_with>
+    <Comment>Only latin characters</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>StrictPetNames = 0</Line_to_Search>
+    <Replace_with>StrictPetNames = 1</Replace_with>
+    <Comment>Only latin characters</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>StartPlayerLevel = 1</Line_to_Search>
+    <Replace_with>StartPlayerLevel = 80</Replace_with>
+    <Comment>Instant 80</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>StartDeathKnightPlayerLevel = 55</Line_to_Search>
+    <Replace_with>StartDeathKnightPlayerLevel = 80</Replace_with>
+    <Comment>DK Instant 80</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>StartPlayerMoney = 0</Line_to_Search>
+    <Replace_with>StartPlayerMoney = 50000</Replace_with>
+    <Comment>Start with 5 gold</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>MaxHonorPoints = 75000</Line_to_Search>
+    <Replace_with>MaxHonorPoints = 1000000</Replace_with>
+    <Comment>Max 1 million honor points</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>StartHonorPoints = 0</Line_to_Search>
+    <Replace_with>StartHonorPoints = 100</Replace_with>
+    <Comment>Start with 100 honor points</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>MaxArenaPoints = 10000</Line_to_Search>
+    <Replace_with>MaxArenaPoints = 1000000</Replace_with>
+    <Comment>Max 1 million arena points</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>StartArenaPoints = 0</Line_to_Search>
+    <Replace_with>StartArenaPoints = 10</Replace_with>
+    <Comment>Start with 10 arena points</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>InstantFlightPaths = 0</Line_to_Search>
+    <Replace_with>InstantFlightPaths = 1</Replace_with>
+    <Comment>Instant taxi</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>Instance.IgnoreRaid = 0</Line_to_Search>
+    <Replace_with>Instance.IgnoreRaid = 1</Replace_with>
+    <Comment>Instances ignore raid group</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>MaxPrimaryTradeSkill = 2</Line_to_Search>
+    <Replace_with>MaxPrimaryTradeSkill = 3</Replace_with>
+    <Comment>Max 3 primary professions</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>MinPetitionSigns = 9</Line_to_Search>
+    <Replace_with>MinPetitionSigns = 0</Replace_with>
+    <Comment>Min signatures for guild creation</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>MailDeliveryDelay = 3600</Line_to_Search>
+    <Replace_with>MailDeliveryDelay = 30</Replace_with>
+    <Comment>Mail items 30 seconds delay</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>SkillChance.Prospecting = 0</Line_to_Search>
+    <Replace_with>SkillChance.Prospecting = 1</Replace_with>
+    <Comment>Allow skill from prospecting</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>SkillChance.Milling = 0</Line_to_Search>
+    <Replace_with>SkillChance.Milling = 1</Replace_with>
+    <Comment>Allow skill from milling</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>Event.Announce = 0</Line_to_Search>
+    <Replace_with>Event.Announce = 1</Replace_with>
+    <Comment>Announce world events</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>Motd = "Welcome to a Trinity Core server."</Line_to_Search>
+    <Replace_with>Motd = ""</Replace_with>
+    <Comment>no motd</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>Command.LookupMaxResults = 0</Line_to_Search>
+    <Replace_with>Command.LookupMaxResults = 50</Replace_with>
+    <Comment>......</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>AllowTwoSide.Interaction.Channel = 0</Line_to_Search>
+    <Replace_with>AllowTwoSide.Interaction.Channel = 1</Replace_with>
+    <Comment>......</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>AllowTwoSide.Interaction.Auction = 0</Line_to_Search>
+    <Replace_with>AllowTwoSide.Interaction.Auction = 1</Replace_with>
+    <Comment>......</Comment>
+  </LineJobs>
+  <LineJobs>
+    <Check>False</Check>
+    <Line_to_Search>TalentsInspecting = 1</Line_to_Search>
+    <Replace_with>TalentsInspecting = 2</Replace_with>
     <Comment>......</Comment>
   </LineJobs>
 </Data>

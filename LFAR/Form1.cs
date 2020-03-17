@@ -106,7 +106,7 @@ namespace LFAR
             // focus on last row
             try { dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.RowCount - 1].Cells[0]; } catch { }
 
-            label1.Text = "Total: " + dataGridView1.RowCount.ToString() + " lines";
+            label1.Text = "Total: " + dataGridView1.RowCount.ToString() + " lines to replace";
         }
 
         private void deleteCollectionButton_Click(object sender, EventArgs e)
@@ -189,51 +189,49 @@ namespace LFAR
 
         private async void buttonDoReplaceJob_Click(object sender, EventArgs e)
         {
-            label1.Text = "Running task, please wait...";
+            int replacesCount = 0;
 
-            int replacesCount = await Task.Run(() => DoReplaceJob(3000));
-
-            label1.Text = "Jobs finished: " + replacesCount + " replaces.";
+            DialogResult result = MessageBox.Show("This action will replace all lines with the values specified.", "Confirmation", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                if (File.Exists(pathOfFile))
+                {
+                    label1.Text = "Running task, please wait...";
+                    replacesCount = await Task.Run(() => DoReplaceJob(1000));
+                    label1.Text = "Jobs finished: " + replacesCount + " replaces.";
+                }
+                else
+                    MessageBox.Show("Please select a valid file!");
+            }
         }
 
         private int DoReplaceJob(int sleepTime)
         {
             int replacesCount = 0;
+            string text = string.Empty;
 
-            if (File.Exists(pathOfFile))
+            using (StreamReader sr = new StreamReader(pathOfFile))
             {
-                DialogResult result = MessageBox.Show("This action will replace all lines with the values specified.", "Confirmation", MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
+                int i = 0;
+                do
                 {
+                    i++; string line = sr.ReadLine();
+
                     foreach (DataGridViewRow row in dataGridView1.Rows)
                     {
-                        // find and replace line from datagridview
-                        string text = "";
-                        using (StreamReader sr = new StreamReader(pathOfFile))
+                        if (line.Contains(row.Cells[1].Value.ToString()))
                         {
-                            int i = 0;
-                            do
-                            {
-                                i++;
-                                string line = sr.ReadLine();
-
-                                if (line == row.Cells[1].Value.ToString())
-                                    replacesCount++;
-
-                                if (line == row.Cells[1].Value.ToString())
-                                    line = line.Replace(line, row.Cells[2].Value.ToString());
-
-                                text = text + line + Environment.NewLine;
-
-                            } while (sr.EndOfStream == false);
+                            line = line.Replace(line, row.Cells[2].Value.ToString());
+                            replacesCount++;
                         }
-                        if (replacesCount > 0)
-                            File.WriteAllText(pathOfFile, text);
                     }
-                }
+                    text = text + line + Environment.NewLine;
+
+                } while (sr.EndOfStream == false);
             }
-            else
-                MessageBox.Show("Please select a valid file!");
+
+            if (replacesCount > 0) 
+                File.WriteAllText(pathOfFile, text);
 
             Thread.Sleep(sleepTime);
 

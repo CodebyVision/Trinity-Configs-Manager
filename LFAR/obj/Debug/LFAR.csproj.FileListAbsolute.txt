@@ -13,12 +13,11 @@ D:\LinesFindAndReplace\LFAR\obj\Debug\LFAR.Properties.Resources.resources
 D:\LinesFindAndReplace\LFAR\obj\Debug\LFAR.csproj.GenerateResource.cache
 D:\LinesFindAndReplace\LFAR\obj\Debug\LFAR.exe
 D:\LinesFindAndReplace\LFAR\obj\Debug\LFAR.pdb
+C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\bin\Debug\LFAR.exe.config
 C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\bin\Debug\LFAR.exe
 C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\bin\Debug\LFAR.pdb
-C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.csprojAssemblyReference.cache
 C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.Form1.resources
 C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.Properties.Resources.resources
 C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.csproj.GenerateResource.cache
 C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.exe
 C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.pdb
-C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\bin\Debug\LFAR.exe.config

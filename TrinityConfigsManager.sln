@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LFAR", "LFAR\LFAR.csproj", "{C678AB4A-90B8-4AF3-89A9-D6B46431F7C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrinityConfigsManager", "TrinityConfigsManager\TrinityConfigsManager.csproj", "{C678AB4A-90B8-4AF3-89A9-D6B46431F7C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

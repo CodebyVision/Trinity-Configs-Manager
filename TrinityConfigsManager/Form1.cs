@@ -13,7 +13,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace LFAR
+namespace TrinityConfigsManager
 {
     public partial class Form1 : Form
     {
@@ -45,17 +45,17 @@ namespace LFAR
                 string pathFile = comboBox1.Text + ".xml";
 
                 DataTable dt = new DataTable();
-                dt.TableName = "LineJobs";
+                dt.TableName = "ConfigJobs";
                 
                 for (int i = 0; i < dataGridView1.Columns.Count; i++)
                 {
                     if (dataGridView1.Columns[i].Visible) // Add's only Visible columns (if you need it)
                     {
-                    string headerText = dataGridView1.Columns[i].HeaderText;
-                    headerText = Regex.Replace(headerText, "[-/, ]", "_");
+                        string headerText = dataGridView1.Columns[i].HeaderText;
+                        headerText = Regex.Replace(headerText, "[-/, ]", "_");
                 
-                    DataColumn column = new DataColumn(headerText);
-                    dt.Columns.Add(column);
+                        DataColumn column = new DataColumn(headerText);
+                        dt.Columns.Add(column);
                     }
                 }
                 
@@ -66,7 +66,6 @@ namespace LFAR
                     dataRow[0] = DataGVRow.Cells[0].Value;
                     dataRow[1] = DataGVRow.Cells[1].Value;
                     dataRow[2] = DataGVRow.Cells[2].Value;
-                    dataRow[3] = DataGVRow.Cells[3].Value;
                 
                     dt.Rows.Add(dataRow); //dt.Columns.Add();
                 }
@@ -106,7 +105,7 @@ namespace LFAR
             // focus on last row
             try { dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.RowCount - 1].Cells[0]; } catch { }
 
-            label1.Text = "Total: " + dataGridView1.RowCount.ToString() + " lines to replace";
+            label1.Text = "Total: " + dataGridView1.RowCount.ToString() + " configs prepared.";
         }
 
         private void deleteCollectionButton_Click(object sender, EventArgs e)
@@ -132,12 +131,11 @@ namespace LFAR
 
             XDocument xmlDoc = XDocument.Load(fileName);
 
-            foreach (var coordinate in xmlDoc.Descendants("LineJobs"))
+            foreach (var coordinate in xmlDoc.Descendants("ConfigJobs"))
             {
                 dataGridView1.Rows.Add(coordinate.Element("Check").Value,
-                    coordinate.Element("Line_to_Search").Value,
-                    coordinate.Element("Replace_with").Value,
-                    coordinate.Element("Comment").Value);
+                    coordinate.Element("Config_Name").Value,
+                    coordinate.Element("Set_Value").Value);
             };
         }
 
@@ -171,7 +169,7 @@ namespace LFAR
 
         private void button7_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Add(false, "......", "......", "......");
+            dataGridView1.Rows.Add(false, "......", "......");
 
             // focus on last row
             try { dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.RowCount - 1].Cells[0]; } catch { }
@@ -191,14 +189,14 @@ namespace LFAR
         {
             int replacesCount = 0;
 
-            DialogResult result = MessageBox.Show("This action will replace all lines with the values specified.", "Confirmation", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("This action will replace specified config values with yours.", "Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 if (File.Exists(pathOfFile))
                 {
                     label1.Text = "Running task, please wait...";
                     replacesCount = await Task.Run(() => DoReplaceJob(1000));
-                    label1.Text = "Jobs finished: " + replacesCount + " replaces.";
+                    label1.Text = "Jobs finished: " + replacesCount + " configs affected.";
                 }
                 else
                     MessageBox.Show("Please select a valid file!");
@@ -219,10 +217,24 @@ namespace LFAR
 
                     foreach (DataGridViewRow row in dataGridView1.Rows)
                     {
-                        if (line.Contains(row.Cells[1].Value.ToString()))
+                        if (!line.StartsWith("#")) // ignore hashtag lines
                         {
-                            line = line.Replace(line, row.Cells[2].Value.ToString());
-                            replacesCount++;
+                            if (line.Contains('=')) // if contains our separator
+                            {
+                                string configName = line.Split('=').First();
+
+                                if (configName.Contains(row.Cells[1].Value.ToString())) // if found the config we are looking for
+                                {
+                                    string configValue = line.Split('=').Last();
+
+                                    if (!string.IsNullOrEmpty(configValue)) // if string after separator is not null or empty
+                                    {
+                                        string newline = configName + "= " + row.Cells[2].Value.ToString(); // prepare new line
+                                        line = line.Replace(line, newline);
+                                        replacesCount++;
+                                    }
+                                }
+                            }
                         }
                     }
                     text = text + line + Environment.NewLine;

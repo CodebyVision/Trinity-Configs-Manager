@@ -1,0 +1,10 @@
+D:\LinesFindAndReplace\LFAR\obj\Debug\TrinityConfigsManager.csprojAssemblyReference.cache
+D:\LinesFindAndReplace\LFAR\obj\Debug\TrinityConfigsManager.Form1.resources
+D:\LinesFindAndReplace\LFAR\obj\Debug\TrinityConfigsManager.csproj.GenerateResource.cache
+D:\LinesFindAndReplace\LFAR\obj\Debug\TrinityConfigsManager.csproj.CoreCompileInputs.cache
+D:\LinesFindAndReplace\LFAR\bin\Debug\TrinityConfigsManager.exe.config
+D:\LinesFindAndReplace\LFAR\bin\Debug\TrinityConfigsManager.exe
+D:\LinesFindAndReplace\LFAR\bin\Debug\TrinityConfigsManager.pdb
+D:\LinesFindAndReplace\LFAR\obj\Debug\TrinityConfigsManager.Properties.Resources.resources
+D:\LinesFindAndReplace\LFAR\obj\Debug\TrinityConfigsManager.exe
+D:\LinesFindAndReplace\LFAR\obj\Debug\TrinityConfigsManager.pdb

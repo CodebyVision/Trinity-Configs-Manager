@@ -21,3 +21,6 @@ C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.Properties.Reso
 C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.csproj.GenerateResource.cache
 C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.exe
 C:\Users\artis\Downloads\LinesFindAndReplace\LFAR\obj\Debug\LFAR.pdb
+D:\LinesFindAndReplace\LFAR\bin\Debug\LFAR.exe.config
+D:\LinesFindAndReplace\LFAR\obj\Debug\LFAR.csprojAssemblyReference.cache
+D:\LinesFindAndReplace\LFAR\obj\Debug\LFAR.csproj.CoreCompileInputs.cache

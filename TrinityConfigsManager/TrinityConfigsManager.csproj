@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C678AB4A-90B8-4AF3-89A9-D6B46431F7C9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>LFAR</RootNamespace>
-    <AssemblyName>LFAR</AssemblyName>
+    <RootNamespace>TrinityConfigsManager</RootNamespace>
+    <AssemblyName>TrinityConfigsManager</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

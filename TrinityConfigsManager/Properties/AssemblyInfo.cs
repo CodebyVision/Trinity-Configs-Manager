@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LFAR")]
+[assembly: AssemblyTitle("TrinityConfigsManager")]
 [assembly: AssemblyDescription("Lines Find and Replace application")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Cyber Mist")]

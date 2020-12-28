@@ -1,4 +1,4 @@
-# TrinityConfigsManager
+# Trinity Configs Manager
 Windows app, finds and replaces multiple lines from a text compatible file
 
 ## ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/CyberMist2/TrinityConfigsManager?color=lime&label=LFAR)
